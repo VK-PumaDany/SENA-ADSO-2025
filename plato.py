@@ -3,11 +3,17 @@ class Plato:
         self.nombre = nombre
         self.categoria = categoria
         self.precio = precio
+        self.is_registred = False
+        self.counter_shoping = 0
 
     def ver_informacion(self):
         print(f"Nombre del plato {self.nombre} \n")
         print(f"Categoria {self.categoria} \n")
         print(f"Precio {self.precio}")
+        if self.is_registred:
+            print(f"Precio {self.precio}")
+        else:
+            print(f"Precio {self.precio}")
 
 
 # Platos
